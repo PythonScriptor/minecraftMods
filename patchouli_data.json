@@ -1,0 +1,22 @@
+{
+  "bookGuiScale": 4,
+  "clickedVisualize": false,
+  "bookData": {
+    "universalbestiary:bestiary": {
+      "viewedEntries": [],
+      "bookmarks": [],
+      "history": [],
+      "completedManualQuests": []
+    },
+    "twilightforest:guide": {
+      "viewedEntries": [
+        "twilightforest:treasures/tconstruct"
+      ],
+      "bookmarks": [],
+      "history": [
+        "twilightforest:treasures/tconstruct"
+      ],
+      "completedManualQuests": []
+    }
+  }
+}

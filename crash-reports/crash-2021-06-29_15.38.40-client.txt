@@ -1,0 +1,257 @@
+---- Minecraft Crash Report ----
+
+WARNING: coremods are present:
+  llibrary (llibrary-core-1.0.11-1.12.2.jar)
+  wings (wings-1.1.6-1.12.2.jar)
+  TransformLoader (DynamicSurroundings-1.12.2-3.6.1.0.jar)
+  SSLoadingPlugin (SereneSeasons-1.12.2-1.2.18-universal.jar)
+  PhosphorFMLLoadingPlugin (phosphor-1.12.2-0.2.6+build50-universal.jar)
+  BackpackBaublesLoadingPlugin (BackpackBaubles-core.jar)
+  HCASM (HammerLib-1.12.2-2.0.6.28.jar)
+  Quark Plugin (Quark-r1.6-179.jar)
+  LoadingPlugin (HardcoreDarkness-MC1.12.2-2.0.jar)
+  iceandfire (iceandfire-1.9.1-1.12.2.jar)
+  CTMCorePlugin (CTM-MC1.12.2-1.0.2.31.jar)
+  LoadingPlugin (Bloodmoon-MC1.12.2-1.5.3.jar)
+Contact their authors BEFORE contacting forge
+
+// There are four lights!
+
+Time: 6/29/21 3:38 PM
+Description: Ticking entity
+
+java.lang.NullPointerException: Ticking entity
+	at xzeroair.trinkets.items.effects.EffectsPolarizedStone.blockArrows(EffectsPolarizedStone.java:178)
+	at xzeroair.trinkets.items.trinkets.TrinketPolarized.eventPlayerTick(TrinketPolarized.java:175)
+	at xzeroair.trinkets.events.BaubleEventHandler.playerUpdate(BaubleEventHandler.java:91)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_1037_BaubleEventHandler_playerUpdate_PlayerTickEvent.invoke(.dynamic)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:90)
+	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:182)
+	at net.minecraftforge.fml.common.FMLCommonHandler.onPlayerPostTick(FMLCommonHandler.java:370)
+	at net.minecraft.entity.player.EntityPlayer.func_184808_cD(EntityPlayer.java:378)
+	at net.minecraft.entity.player.EntityPlayer.func_70071_h_(EntityPlayer.java:288)
+	at net.minecraft.client.entity.EntityPlayerSP.func_70071_h_(EntityPlayerSP.java:181)
+	at net.minecraft.world.World.func_72866_a(World.java:1996)
+	at net.minecraft.world.World.func_72870_g(World.java:1958)
+	at net.minecraft.world.World.func_72939_s(World.java:1762)
+	at net.minecraft.client.Minecraft.func_71407_l(Minecraft.java:1847)
+	at net.minecraft.client.Minecraft.func_71411_J(Minecraft.java:1098)
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:398)
+	at net.minecraft.client.main.Main.main(SourceFile:123)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Client thread
+Stacktrace:
+	at xzeroair.trinkets.items.effects.EffectsPolarizedStone.blockArrows(EffectsPolarizedStone.java:178)
+	at xzeroair.trinkets.items.trinkets.TrinketPolarized.eventPlayerTick(TrinketPolarized.java:175)
+	at xzeroair.trinkets.events.BaubleEventHandler.playerUpdate(BaubleEventHandler.java:91)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_1037_BaubleEventHandler_playerUpdate_PlayerTickEvent.invoke(.dynamic)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:90)
+	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:182)
+	at net.minecraftforge.fml.common.FMLCommonHandler.onPlayerPostTick(FMLCommonHandler.java:370)
+	at net.minecraft.entity.player.EntityPlayer.func_184808_cD(EntityPlayer.java:378)
+	at net.minecraft.entity.player.EntityPlayer.func_70071_h_(EntityPlayer.java:288)
+	at net.minecraft.client.entity.EntityPlayerSP.func_70071_h_(EntityPlayerSP.java:181)
+	at net.minecraft.world.World.func_72866_a(World.java:1996)
+	at net.minecraft.world.World.func_72870_g(World.java:1958)
+
+-- Entity being ticked --
+Details:
+	Entity Type: null (net.minecraft.client.entity.EntityPlayerSP)
+	Entity ID: 3053
+	Entity Name: Froaggu
+	Entity's Exact location: -504.13, 70.00, -67.98
+	Entity's Block location: World: (-505,70,-68), Chunk: (at 7,4,12 in -32,-5; contains blocks -512,0,-80 to -497,255,-65), Region: (-1,-1; contains chunks -32,-32 to -1,-1, blocks -512,0,-512 to -1,255,-1)
+	Entity's Momentum: 0.14, -0.08, -0.06
+	Entity's Passengers: []
+	Entity's Vehicle: ~~ERROR~~ NullPointerException: null
+Stacktrace:
+	at net.minecraft.world.World.func_72939_s(World.java:1762)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityPlayerSP['Froaggu'/3053, l='MpServer', x=-504.13, y=70.00, z=-67.98]]
+	Chunk stats: MultiplayerChunkCache: 387, 387
+	Level seed: 0
+	Level generator: ID 00 - default, ver 1. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (-249,64,20), Chunk: (at 7,4,4 in -16,1; contains blocks -256,0,16 to -241,255,31), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,0,0 to -1,255,511)
+	Level time: 15971 game time, 4544 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 217 total; [EntityPlayerSP['Froaggu'/3053, l='MpServer', x=-358.71, y=73.37, z=90.07], EntityLatchedRenderer['unknown'/3077, l='MpServer', x=8.50, y=65.00, z=8.50], EntityZombie['Zombie'/25664, l='MpServer', x=-496.50, y=36.00, z=-114.50], EntityZombie['Zombie'/25665, l='MpServer', x=-499.50, y=36.00, z=-111.50], EntityZombie['Zombie'/25666, l='MpServer', x=-500.50, y=36.00, z=-110.50], EntityPlayerSP['Froaggu'/3053, l='MpServer', x=-504.13, y=70.00, z=-67.98], EntityItem['item.tile.sand.default'/25708, l='MpServer', x=-506.52, y=58.00, z=-30.88], EntityLatchedRenderer['unknown'/20589, l='MpServer', x=8.50, y=65.00, z=8.50], EntityZombieVillager['Zombie Villager'/24801, l='MpServer', x=-534.50, y=37.00, z=-51.50], EntityCreeper['Creeper'/24812, l='MpServer', x=-508.59, y=38.00, z=-40.84], EntityHippocampus['Hippocampus'/23788, l='MpServer', x=-550.82, y=41.70, z=-64.43], EntityHippocampus['Hippocampus'/23791, l='MpServer', x=-550.00, y=39.37, z=-11.70], EntitySkeleton['Skeleton'/25844, l='MpServer', x=-458.50, y=18.00, z=-56.50], EntityCreeper['Creeper'/24869, l='MpServer', x=-517.50, y=20.00, z=-100.50], EntityBat['Bat'/25924, l='MpServer', x=-443.09, y=44.88, z=-53.48], EntityZombie['Zombie'/25930, l='MpServer', x=-503.44, y=54.00, z=-63.89], EntityZombie['Zombie'/25931, l='MpServer', x=-503.98, y=54.00, z=-64.34], EntityZombie['Zombie'/25932, l='MpServer', x=-503.30, y=54.00, z=-64.70], EntityZombie['Zombie'/24932, l='MpServer', x=-504.21, y=27.00, z=-29.50], EntitySkeleton['Skeleton'/24934, l='MpServer', x=-447.50, y=46.00, z=-75.50], EntityCreeper['Creeper'/24952, l='MpServer', x=-447.50, y=46.00, z=-76.50], EntityCreeper['Creeper'/24953, l='MpServer', x=-451.50, y=46.00, z=-73.50], EntityZombie['Zombie'/24955, l='MpServer', x=-518.50, y=13.00, z=-15.50], EntityItem['item.item.string'/23952, l='MpServer', x=-544.64, y=2.00, z=-76.58], EntityItem['item.item.string'/23954, l='MpServer', x=-549.38, y=2.00, z=-79.15], EntityItem['item.item.string'/23955, l='MpServer', x=-547.72, y=2.00, z=-78.94], EntityItem['item.item.string'/23956, l='MpServer', x=-545.52, y=3.00, z=-74.42], EntityBat['Bat'/24999, l='MpServer', x=-473.48, y=21.06, z=-54.15], EntityStoneling['Stoneling'/26026, l='MpServer', x=-463.50, y=15.00, z=-89.50], EntityStoneling['Stoneling'/26027, l='MpServer', x=-455.94, y=14.00, z=-90.50], EntityItem['item.item.string'/23980, l='MpServer', x=-536.37, y=24.00, z=-86.01], EntityItem['item.item.string'/23981, l='MpServer', x=-533.66, y=26.00, z=-79.95], EntityBat['Bat'/26030, l='MpServer', x=-428.66, y=16.05, z=-60.34], EntityItem['item.item.string'/23983, l='MpServer', x=-534.00, y=25.00, z=-84.84], EntityItem['item.item.string'/23984, l='MpServer', x=-533.19, y=25.00, z=-82.51], EntityItem['item.item.string'/23985, l='MpServer', x=-532.96, y=24.00, z=-86.13], EntityItem['item.item.string'/23987, l='MpServer', x=-533.93, y=25.00, z=-83.41], EntityItem['item.item.string'/23988, l='MpServer', x=-531.73, y=7.00, z=-85.47], EntityItem['item.item.string'/23989, l='MpServer', x=-531.90, y=25.00, z=-85.96], EntityItem['item.item.string'/23990, l='MpServer', x=-531.48, y=26.00, z=-81.67], EntityItem['item.item.string'/23991, l='MpServer', x=-529.13, y=26.00, z=-82.13], EntityBat['Bat'/26039, l='MpServer', x=-445.74, y=26.01, z=-84.12], EntityItem['item.item.string'/23992, l='MpServer', x=-529.46, y=16.00, z=-83.88], EntityItem['item.item.string'/23993, l='MpServer', x=-540.56, y=23.00, z=-87.66], EntityBat['Bat'/26041, l='MpServer', x=-449.60, y=34.10, z=-86.75], EntityItem['item.item.string'/23994, l='MpServer', x=-543.44, y=26.00, z=-80.13], EntityBat['Bat'/26042, l='MpServer', x=-456.45, y=40.22, z=-81.56], EntityItem['item.item.string'/23995, l='MpServer', x=-543.66, y=26.00, z=-80.92], EntityItem['item.item.string'/23996, l='MpServer', x=-542.74, y=25.00, z=-82.13], EntityItem['item.item.string'/23997, l='MpServer', x=-541.88, y=24.00, z=-83.33], EntityItem['item.item.string'/23999, l='MpServer', x=-539.21, y=25.00, z=-81.39], EntityItem['item.item.string'/24000, l='MpServer', x=-540.28, y=3.00, z=-80.77], EntityItem['item.item.string'/24001, l='MpServer', x=-538.75, y=24.00, z=-82.75], EntityItem['item.item.string'/24002, l='MpServer', x=-537.95, y=24.00, z=-82.58], EntityItem['item.item.string'/24003, l='MpServer', x=-536.42, y=25.00, z=-81.61], EntityItem['item.item.string'/24005, l='MpServer', x=-537.55, y=24.00, z=-84.12], EntityItem['item.item.string'/24006, l='MpServer', x=-541.70, y=23.00, z=-88.28], EntityItem['item.item.string'/24007, l='MpServer', x=-544.21, y=22.00, z=-93.59], EntityZombieVillager['Zombie Villager'/26055, l='MpServer', x=-454.50, y=24.00, z=-23.50], EntityItem['item.item.string'/24008, l='MpServer', x=-540.42, y=22.00, z=-95.97], EntitySpider['Spider'/26056, l='MpServer', x=-450.50, y=24.00, z=-22.50], EntityItem['item.item.string'/24009, l='MpServer', x=-540.08, y=22.00, z=-94.12], EntityItem['item.item.string'/24010, l='MpServer', x=-539.86, y=23.00, z=-89.06], EntityItem['item.item.string'/24011, l='MpServer', x=-538.51, y=23.00, z=-88.51], EntityItem['item.item.string'/24012, l='MpServer', x=-534.56, y=24.00, z=-87.73], EntityItem['item.item.string'/24014, l='MpServer', x=-533.53, y=23.00, z=-93.27], EntityGuardian['Guardian'/26062, l='MpServer', x=-575.50, y=3.00, z=-135.50], EntityItem['item.item.string'/24015, l='MpServer', x=-532.17, y=24.00, z=-92.25], EntityGuardian['Guardian'/26063, l='MpServer', x=-577.50, y=3.00, z=-138.50], EntityItem['item.item.string'/24016, l='MpServer', x=-532.21, y=23.00, z=-93.34], EntityItem['item.item.string'/24017, l='MpServer', x=-531.41, y=24.00, z=-90.82], EntityItem['item.item.string'/24018, l='MpServer', x=-530.28, y=4.00, z=-97.26], EntityItem['item.item.string'/24019, l='MpServer', x=-527.56, y=5.00, z=-91.78], EntityItem['item.item.string'/24020, l='MpServer', x=-528.13, y=25.00, z=-91.82], EntityItem['item.item.string'/24021, l='MpServer', x=-529.08, y=25.00, z=-95.02], EntityItem['item.item.string'/24022, l='MpServer', x=-537.58, y=26.00, z=-80.08], EntityItem['item.item.string'/24023, l='MpServer', x=-554.02, y=10.00, z=-79.96], EntityItem['item.item.string'/24024, l='MpServer', x=-550.05, y=11.00, z=-87.29], EntityItem['item.item.string'/24025, l='MpServer', x=-549.52, y=11.00, z=-85.49], EntityItem['item.item.string'/24026, l='MpServer', x=-548.68, y=26.00, z=-83.87], EntityItem['item.item.string'/24027, l='MpServer', x=-546.11, y=2.00, z=-78.27], EntityItem['item.item.string'/24028, l='MpServer', x=-547.34, y=2.00, z=-81.74], EntityItem['item.item.string'/24029, l='MpServer', x=-546.00, y=24.00, z=-87.83], EntityItem['item.item.string'/24030, l='MpServer', x=-547.23, y=26.00, z=-82.13], EntityCreeper['Creeper'/26079, l='MpServer', x=-439.50, y=33.00, z=-84.50], EntityCreeper['Creeper'/25056, l='MpServer', x=-522.50, y=34.00, z=-22.50], EntityItem['item.item.string'/24032, l='MpServer', x=-545.94, y=25.00, z=-84.13], EntityCreeper['Creeper'/26080, l='MpServer', x=-441.15, y=36.00, z=-77.53], EntityItem['item.item.string'/24033, l='MpServer', x=-549.49, y=11.00, z=-89.10], EntityItem['item.item.string'/24034, l='MpServer', x=-549.13, y=22.00, z=-91.11], EntityItem['item.item.string'/24035, l='MpServer', x=-547.60, y=24.00, z=-87.35], EntityItem['item.item.string'/24036, l='MpServer', x=-546.88, y=23.00, z=-92.20], EntityCreeper['Creeper'/26084, l='MpServer', x=-506.50, y=15.00, z=-65.50], EntityItem['item.item.string'/24038, l='MpServer', x=-544.78, y=22.00, z=-94.61], EntityItem['item.item.string'/24040, l='MpServer', x=-544.19, y=23.00, z=-90.00], EntityItem['item.item.string'/24041, l='MpServer', x=-553.13, y=11.00, z=-84.69], EntityItem['item.item.string'/24044, l='MpServer', x=-552.69, y=12.00, z=-89.72], EntityCrab['Crab'/24046, l='MpServer', x=-453.50, y=64.00, z=-93.50], EntityCrab['Crab'/24047, l='MpServer', x=-453.50, y=64.00, z=-93.50], EntityCrab['Crab'/24048, l='MpServer', x=-458.25, y=67.00, z=-84.55], EntityItem['item.item.string'/24050, l='MpServer', x=-486.58, y=29.00, z=-85.92], EntityItem['item.item.string'/24052, l='MpServer', x=-484.74, y=29.00, z=-85.56], EntityItem['item.item.string'/24053, l='MpServer', x=-485.00, y=29.00, z=-87.28], EntityItem['item.item.string'/24054, l='MpServer', x=-482.46, y=29.00, z=-84.11], EntityItem['item.item.string'/24055, l='MpServer', x=-481.89, y=30.00, z=-86.64], EntityItem['item.item.string'/24056, l='MpServer', x=-491.88, y=36.00, z=-89.16], EntityItem['item.item.string'/24057, l='MpServer', x=-493.84, y=36.00, z=-87.78], EntityItem['item.item.string'/24058, l='MpServer', x=-493.29, y=36.00, z=-86.53], EntityGuardian['Guardian'/26106, l='MpServer', x=-583.43, y=13.00, z=-63.59], EntityItem['item.item.string'/24059, l='MpServer', x=-494.88, y=46.00, z=-93.88], EntityZombie['Zombie'/26107, l='MpServer', x=-476.50, y=21.00, z=-74.50], EntityItem['item.item.string'/24060, l='MpServer', x=-494.23, y=53.00, z=-88.88], EntityItem['item.item.string'/24061, l='MpServer', x=-510.13, y=53.00, z=-89.76], EntityItem['item.item.string'/24062, l='MpServer', x=-519.30, y=8.00, z=-89.81], EntityItem['item.item.string'/24064, l='MpServer', x=-515.13, y=6.00, z=-93.73], EntityItem['item.item.string'/24066, l='MpServer', x=-526.80, y=26.00, z=-94.80], EntitySkeleton['Skeleton'/26114, l='MpServer', x=-457.50, y=15.00, z=-88.50], EntityItem['item.item.string'/24067, l='MpServer', x=-526.88, y=8.00, z=-91.07], EntityGuardian['Guardian'/26116, l='MpServer', x=-462.50, y=19.00, z=-121.50], EntityItem['item.item.string'/24069, l='MpServer', x=-524.24, y=2.00, z=-94.38], EntityGuardian['Guardian'/26117, l='MpServer', x=-464.43, y=20.00, z=-124.58], EntityItem['item.item.string'/24070, l='MpServer', x=-525.74, y=27.00, z=-92.21], EntityGuardian['Guardian'/26118, l='MpServer', x=-466.50, y=15.00, z=-123.50], EntityItem['item.item.string'/24071, l='MpServer', x=-525.08, y=1.00, z=-92.42], EntityGuardian['Guardian'/26119, l='MpServer', x=-466.50, y=13.00, z=-124.50], EntityItem['item.item.string'/24072, l='MpServer', x=-523.56, y=28.00, z=-90.76], EntitySkeleton['Skeleton'/25097, l='MpServer', x=-493.50, y=16.00, z=-41.50], EntityItem['item.item.string'/24073, l='MpServer', x=-522.55, y=29.00, z=-91.74], EntityItem['item.item.string'/24074, l='MpServer', x=-520.04, y=9.00, z=-88.70], EntityBlueSlime['Blue Slime'/26129, l='MpServer', x=-506.26, y=59.00, z=-31.74], EntityBlueSlime['Blue Slime'/26130, l='MpServer', x=-506.79, y=59.36, z=-30.16], EntityItem['item.item.string'/24093, l='MpServer', x=-515.35, y=21.00, z=-98.50], EntityItem['item.item.string'/24094, l='MpServer', x=-523.85, y=4.00, z=-98.88], EntityItem['item.item.string'/24096, l='MpServer', x=-524.13, y=28.00, z=-95.36], EntityItem['item.item.string'/24097, l='MpServer', x=-521.39, y=2.00, z=-96.12], EntityItem['item.item.string'/24098, l='MpServer', x=-540.75, y=22.00, z=-99.58], EntityBat['Bat'/26146, l='MpServer', x=-442.55, y=14.81, z=-15.81], EntityItem['item.item.string'/24099, l='MpServer', x=-534.54, y=27.00, z=-101.11], EntityItem['item.item.string'/24100, l='MpServer', x=-536.18, y=23.00, z=-100.88], EntityItem['item.item.string'/24101, l='MpServer', x=-533.82, y=23.00, z=-97.95], EntityItem['item.item.string'/24102, l='MpServer', x=-531.86, y=24.00, z=-97.22], EntityItem['item.item.string'/24103, l='MpServer', x=-531.08, y=24.00, z=-97.18], EntityItem['item.item.string'/24104, l='MpServer', x=-545.88, y=22.00, z=-95.78], EntityItem['item.item.quark:root'/24107, l='MpServer', x=-493.88, y=46.00, z=-98.83], EntityGorgon['Gorgon'/24108, l='MpServer', x=-502.50, y=36.00, z=-102.50], EntityItem['item.item.string'/24110, l='MpServer', x=-507.13, y=46.00, z=-94.05], EntityItem['item.item.string'/24111, l='MpServer', x=-510.91, y=53.00, z=-110.65], EntityItem['item.item.string'/24112, l='MpServer', x=-507.13, y=46.00, z=-103.26], EntityItem['item.item.string'/24113, l='MpServer', x=-511.05, y=53.00, z=-103.81], EntityItem['item.item.string'/24114, l='MpServer', x=-510.13, y=53.00, z=-101.38], EntityCreeper['Creeper'/26167, l='MpServer', x=-447.50, y=34.00, z=-82.50], EntityItem['item.item.string'/24120, l='MpServer', x=-484.68, y=36.00, z=-114.96], EntityItem['item.item.string'/24121, l='MpServer', x=-493.22, y=36.00, z=-115.88], EntityItem['item.item.string'/24122, l='MpServer', x=-491.88, y=36.00, z=-112.84], EntityGuardian['Guardian'/26170, l='MpServer', x=-555.71, y=37.00, z=-15.42], EntityItem['item.item.string'/24123, l='MpServer', x=-495.97, y=53.00, z=-113.70], EntityItem['item.item.string'/24124, l='MpServer', x=-493.16, y=53.00, z=-113.30], EntityItem['item.item.string'/24125, l='MpServer', x=-494.02, y=54.50, z=-113.13], EntityItem['item.item.string'/24127, l='MpServer', x=-500.77, y=46.00, z=-104.72], EntitySkeleton['Skeleton'/24131, l='MpServer', x=-491.50, y=15.00, z=-42.50], EntityBat['Bat'/26183, l='MpServer', x=-498.52, y=47.19, z=-89.34], EntityBat['Bat'/26184, l='MpServer', x=-497.58, y=48.79, z=-88.56], EntityBat['Bat'/26185, l='MpServer', x=-503.97, y=49.85, z=-88.75], EntitySkeleton['Skeleton'/26190, l='MpServer', x=-461.50, y=18.00, z=-87.50], EntityGuardian['Guardian'/26200, l='MpServer', x=-459.50, y=37.00, z=-122.50], EntityBat['Bat'/25183, l='MpServer', x=-536.01, y=24.29, z=-59.59], EntityCreeper['Creeper'/26221, l='MpServer', x=-495.50, y=21.00, z=-96.50], EntityCreeper['Creeper'/26224, l='MpServer', x=-509.50, y=29.00, z=-29.50], EntityCreeper['Creeper'/26225, l='MpServer', x=-511.50, y=29.00, z=-26.50], EntitySkeleton['Skeleton'/26228, l='MpServer', x=-472.50, y=19.00, z=-77.50], EntityCreeper['Creeper'/26232, l='MpServer', x=-427.50, y=24.00, z=-99.50], EntitySkeleton['Skeleton'/25215, l='MpServer', x=-524.34, y=48.00, z=-68.52], EntityBat['Bat'/26239, l='MpServer', x=-530.89, y=33.23, z=-64.83], EntitySkeleton['Skeleton'/25216, l='MpServer', x=-519.49, y=49.00, z=-75.71], EntitySkeleton['Skeleton'/25217, l='MpServer', x=-515.31, y=49.00, z=-79.23], EntitySkeleton['Skeleton'/25218, l='MpServer', x=-517.24, y=49.00, z=-74.50], EntityBat['Bat'/26242, l='MpServer', x=-531.57, y=32.00, z=-63.01], EntityGuardian['Guardian'/26253, l='MpServer', x=-553.50, y=6.00, z=-1.50], EntityGuardian['Guardian'/26255, l='MpServer', x=-437.03, y=1.00, z=-138.99], EntitySkeleton['Skeleton'/25241, l='MpServer', x=-466.50, y=30.00, z=-80.50], EntitySkeleton['Skeleton'/25242, l='MpServer', x=-467.50, y=30.00, z=-79.50], EntityBat['Bat'/26283, l='MpServer', x=-454.22, y=34.94, z=-88.76], EntitySkeleton['Skeleton'/26288, l='MpServer', x=-459.15, y=30.00, z=-57.50], EntityCreeper['Creeper'/26289, l='MpServer', x=-459.80, y=30.00, z=-57.50], EntityGrottol['Grottol'/26303, l='MpServer', x=-506.50, y=27.00, z=-24.50], EntityCreeper['Creeper'/26316, l='MpServer', x=-502.50, y=36.00, z=-113.50], EntityCreeper['Creeper'/26318, l='MpServer', x=-498.50, y=36.00, z=-113.50], EntityStoneling['Stoneling'/25296, l='MpServer', x=-455.50, y=19.00, z=-102.50], EntitySkeleton['Skeleton'/26335, l='MpServer', x=-506.50, y=28.00, z=-30.50], EntityZombie['Zombie'/26336, l='MpServer', x=-493.50, y=29.00, z=-53.50], EntitySquid['Squid'/24294, l='MpServer', x=-501.83, y=56.88, z=-8.84], EntityCreeper['Creeper'/25331, l='MpServer', x=-527.50, y=32.00, z=-68.50], EntityBat['Bat'/26356, l='MpServer', x=-505.75, y=48.08, z=-99.50], EntityBat['Bat'/26358, l='MpServer', x=-504.41, y=48.02, z=-87.14], EntityBat['Bat'/26360, l='MpServer', x=-497.39, y=46.06, z=-93.25], EntityBat['Bat'/26361, l='MpServer', x=-503.44, y=49.06, z=-93.28], EntitySquid['Squid'/24345, l='MpServer', x=-531.99, y=54.56, z=-36.19], EntityFireDragon['Fire Dragon'/22383, l='MpServer', x=-496.91, y=69.00, z=-71.63], EntitySquid['Squid'/24436, l='MpServer', x=-513.46, y=56.15, z=-17.82], EntityItem['item.item.string'/23414, l='MpServer', x=-534.13, y=6.00, z=-77.36], EntityItem['item.item.string'/23415, l='MpServer', x=-538.16, y=4.00, z=-75.55], EntitySquid['Squid'/24439, l='MpServer', x=-506.18, y=59.03, z=-13.71], EntityItem['item.item.string'/23416, l='MpServer', x=-537.13, y=9.00, z=-74.13], EntityItem['item.item.string'/23417, l='MpServer', x=-542.83, y=3.00, z=-77.46], EntityItem['item.item.string'/23418, l='MpServer', x=-541.01, y=3.00, z=-77.88], EntityItem['item.item.string'/23419, l='MpServer', x=-539.00, y=4.00, z=-75.13], EntityItem['item.item.string'/23421, l='MpServer', x=-532.28, y=26.00, z=-79.93], EntityItem['item.item.string'/23422, l='MpServer', x=-539.96, y=26.00, z=-79.46], EntitySkeleton['Skeleton'/25500, l='MpServer', x=-464.46, y=34.00, z=-91.27], EntityItem['item.item.iceandfire.shiny_scales'/21419, l='MpServer', x=-479.75, y=36.00, z=-37.62], EntityCreeper['Creeper'/25532, l='MpServer', x=-449.53, y=37.00, z=-86.81], EntitySkeleton['Skeleton'/25552, l='MpServer', x=-459.50, y=32.00, z=-87.50], EntitySquid['Squid'/24543, l='MpServer', x=-466.43, y=45.36, z=-34.15], EntityZombie['Zombie'/25571, l='MpServer', x=-520.50, y=14.00, z=-62.50], EntitySquid['Squid'/24564, l='MpServer', x=-470.97, y=51.75, z=-9.21], EntitySquid['Squid'/24565, l='MpServer', x=-479.40, y=51.70, z=-14.74], EntitySquid['Squid'/24566, l='MpServer', x=-475.92, y=51.83, z=-9.78]]
+	Retry entities: 4 total; [EntityLatchedRenderer['unknown'/3077, l='MpServer', x=8.50, y=65.00, z=8.50], EntityItem['item.item.dyePowder.black'/19756, l='MpServer', x=-396.47, y=40.74, z=152.88], EntityItem['item.item.bone'/19557, l='MpServer', x=-361.88, y=56.00, z=66.69], EntityLatchedRenderer['unknown'/20589, l='MpServer', x=8.50, y=65.00, z=8.50]]
+	Server brand: fml,forge
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.func_72914_a(WorldClient.java:420)
+	at net.minecraft.client.Minecraft.func_71396_d(Minecraft.java:2741)
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:419)
+	at net.minecraft.client.main.Main.main(SourceFile:123)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_51, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 660489944 bytes (629 MB) / 3175612416 bytes (3028 MB) up to 3817865216 bytes (3641 MB)
+	JVM Flags: 4 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xmx4096m -Xms256m -XX:PermSize=256m
+	IntCache: cache: 0, tcache: 0, allocated: 12, tallocated: 94
+	FML: MCP 9.42 Powered by Forge 14.23.5.2855 66 mods loaded, 65 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+
+	| State  | ID                  | Version                  | Source                                        | Signature                                |
+	|:------ |:------------------- |:------------------------ |:--------------------------------------------- |:---------------------------------------- |
+	| LCHIJA | minecraft           | 1.12.2                   | minecraft.jar                                 | None                                     |
+	| LCHIJA | mcp                 | 9.42                     | minecraft.jar                                 | None                                     |
+	| LCHIJA | FML                 | 8.0.99.99                | forge-1.12.2-14.23.5.2855.jar                 | e3c3d50c7c986df74c645c0ac54639741c90a557 |
+	| LCHIJA | forge               | 14.23.5.2855             | forge-1.12.2-14.23.5.2855.jar                 | e3c3d50c7c986df74c645c0ac54639741c90a557 |
+	| LCHIJA | aiimprovements      | 0.0.1.3                  | AIImprovements-1.12-0.0.1b3.jar               | None                                     |
+	| LCHIJA | antiqueatlas        | 4.6.3                    | antiqueatlas-1.12.2-4.6.3.jar                 | None                                     |
+	| LCHIJA | antiqueatlasoverlay | 1.2                      | antiqueatlas-1.12.2-4.6.3.jar                 | None                                     |
+	| LCHIJA | jei                 | 4.16.1.301               | jei_1.12.2-4.16.1.301.jar                     | None                                     |
+	| LCHIJA | appleskin           | 1.0.14                   | AppleSkin-mc1.12-1.0.14.jar                   | None                                     |
+	| LCHIJA | aquaculture         | 1.6.8                    | Aquaculture-1.12.2-1.6.8.jar                  | None                                     |
+	| LCHIJA | quark               | r1.6-179                 | Quark-r1.6-179.jar                            | None                                     |
+	| LCHIJA | autoreglib          | 1.3-32                   | AutoRegLib-1.3-32.jar                         | None                                     |
+	| LCHIJA | baubles             | 1.5.2                    | Baubles-1.12-1.5.2.jar                        | None                                     |
+	| LCHIJA | quarkoddities       | 1                        | QuarkOddities-1.12.2.jar                      | None                                     |
+	| LCHIJA | backpackbaubles     | 0.2.0                    | BackpackBaubles-0.2.0.jar                     | 5b3541c0ad09747e10f4df8633a05b175f54de7a |
+	| LCHIJA | baubleofundying     | 1.0.1                    | BaubleOfUndying-1.12-1.0.1.jar                | None                                     |
+	| LCHIJA | mantle              | 1.12-1.3.3.55            | Mantle-1.12-1.3.3.55.jar                      | None                                     |
+	| LCHIJA | ctm                 | MC1.12.2-1.0.2.31        | CTM-MC1.12.2-1.0.2.31.jar                     | None                                     |
+	| LCHIJA | twilightforest      | 3.11.1021                | twilightforest-1.12.2-3.11.1021-universal.jar | None                                     |
+	| LCHIJA | tconstruct          | 1.12.2-2.13.0.183        | TConstruct-1.12.2-2.13.0.183.jar              | None                                     |
+	| LCHIJA | bhc                 | 1.2.3                    | baubley-heart-canisters-1.12.2-1.2.3.jar      | None                                     |
+	| LCHIJA | bettercaves         | 1.12.2                   | bettercaves-1.12.2-2.0.4.jar                  | None                                     |
+	| LCHIJA | bettermineshafts    | 1.12.2-2.2.1             | BetterMineshaftsForge-1.12.2-2.2.1.jar        | None                                     |
+	| LCHIJA | biomesoplenty       | 7.0.1.2441               | BiomesOPlenty-1.12.2-7.0.1.2441-universal.jar | None                                     |
+	| LCHIJA | bloodmoon           | 1.5.3                    | Bloodmoon-MC1.12.2-1.5.3.jar                  | d72e0dd57935b3e9476212aea0c0df352dd76291 |
+	| LCHIJA | bookshelf           | 2.3.590                  | Bookshelf-1.12.2-2.3.590.jar                  | d476d1b22b218a10d845928d1665d45fce301b27 |
+	| LCHIJA | conarm              | 1.2.5.10                 | conarm-1.12.2-1.2.5.10.jar                    | b33d2c8df492beff56d1bbbc92da49b8ab7345a1 |
+	| LCHIJA | culinaryconstruct   | 1.3.4                    | culinaryconstruct-1.3.4.jar                   | 2484ef4d131fdc0dca0647aa21b7b944ddb935a1 |
+	| LCHIJA | sereneseasons       | 1.2.18                   | SereneSeasons-1.12.2-1.2.18-universal.jar     | None                                     |
+	| LCHIJA | orelib              | 3.6.0.1                  | OreLib-1.12.2-3.6.0.1.jar                     | 7a2128d395ad96ceb9d9030fbd41d035b435753a |
+	| LCHIJA | dsurround           | 3.6.1.0                  | DynamicSurroundings-1.12.2-3.6.1.0.jar        | 7a2128d395ad96ceb9d9030fbd41d035b435753a |
+	| LCHIJA | edt                 | 1.1                      | DynamicTorches-1.12.2-1.1.jar                 | None                                     |
+	| LCHIJA | minerva             | 1.0.13                   | minerva-library-1.0.13.jar                    | b851b8b7c7f4d8d0e910ff27618150ba80c026ec |
+	| LCHIJA | extraalchemy        | 0.5.4                    | extraalchemy-forge-1.12-build11-0.5.4.jar     | b851b8b7c7f4d8d0e910ff27618150ba80c026ec |
+	| LCHIJA | falling_tree        | 2.4.0                    | FallingTree-1.12.2-2.4.0.jar                  | None                                     |
+	| LCHIJA | hammercore          | 2.0.6.28                 | HammerLib-1.12.2-2.0.6.28.jar                 | 9f5e2a811a8332a842b34f6967b7db0ac4f24856 |
+	| LCHIJA | hardcoredarkness    | 2.0                      | HardcoreDarkness-MC1.12.2-2.0.jar             | d72e0dd57935b3e9476212aea0c0df352dd76291 |
+	| LCHIJA | llibrary            | 1.7.20                   | llibrary-1.7.20-1.12.2.jar                    | b9f30a813bee3b9dd5652c460310cfcd54f6b7ec |
+	| LCHIJA | iceandfire          | 1.9.1                    | iceandfire-1.9.1-1.12.2.jar                   | None                                     |
+	| LCHIJA | ichunutil           | 7.2.2                    | iChunUtil-1.12.2-7.2.2.jar                    | 4db5c2bd1b556f252a5b8b54b256d381b2a0a6b8 |
+	| LCHIJA | ironchest           | 1.12.2-7.0.67.844        | ironchest-1.12.2-7.0.72.847.jar               | None                                     |
+	| LCHIJA | journeymap          | 1.12.2-5.7.1             | journeymap-1.12.2-5.7.1.jar                   | None                                     |
+	| LCHIJA | jeresources         | 0.9.2.60                 | JustEnoughResources-1.12.2-0.9.2.60.jar       | None                                     |
+	| LCHIJA | libraryex           | 1.2.1                    | LibraryEx-1.12.2-1.2.1.jar                    | None                                     |
+	| LCHIJA | moartinkers         | 0.6.0                    | moartinkers-0.6.0.jar                         | None                                     |
+	| LCHIJA | morph               | 7.2.0                    | Morph-1.12.2-7.2.1.jar                        | 4db5c2bd1b556f252a5b8b54b256d381b2a0a6b8 |
+	| LCHIJA | mowziesmobs         | 1.5.8                    | mowziesmobs-1.5.8.jar                         | None                                     |
+	| LCHIJA | netherex            | 2.2.4                    | NetherEx-1.12.2-2.2.4.jar                     | None                                     |
+	| LCHIJA | bonecraft           | 1.12.2b                  | Pam's BoneCraft 1.12.2b.jar                   | None                                     |
+	| LCHIJA | desertcraft         | 1.12.2b                  | Pam's DesertCraft 1.12.2c.jar                 | None                                     |
+	| LCHIJA | harvestcraft        | 1.12.2zb                 | Pam's HarvestCraft 1.12.2zg.jar               | None                                     |
+	| LCHIJA | pamscookables       | 1.1                      | pamscookables-1.1.jar                         | None                                     |
+	| LCHIJA | patchouli           | 1.0-23.6                 | Patchouli-1.0-23.6.jar                        | None                                     |
+	| LCHIJA | placebo             | 1.6.0                    | Placebo-1.12.2-1.6.0.jar                      | None                                     |
+	| LCHIJA | plants2             | 2.10.7                   | Plants-1.12.2-2.10.7.jar                      | None                                     |
+	| LCHIJA | tinkersjei          | 1.2                      | tinkersjei-1.2.jar                            | None                                     |
+	| LCHIJA | tinkertoolleveling  | 1.12.2-1.1.0.DEV.b23e769 | TinkerToolLeveling-1.12.2-1.1.0.jar           | None                                     |
+	| LCHIJA | xat                 | 0.30                     | Trinkets and Baubles-0.30.1.jar               | None                                     |
+	| LCHIJA | wrd                 | 0.8.0                    | Wesley's Roguelike Dungeons V0.8.1.jar        | None                                     |
+	| LCHIJA | wings               | 1.1.6                    | wings-1.1.6-1.12.2.jar                        | None                                     |
+	| LCHIJA | mowzies_wings       | 1.0.0                    | wings-1.1.6-1.12.2.jar                        | None                                     |
+	| LCHIJA | bauble_wings        | 1.0.0                    | wings-1.1.6-1.12.2.jar                        | None                                     |
+	| LCHIJA | yoyos               | 1.12.2-1.3.3.25          | yoyos_1.12.2-1.3.3.25.jar                     | None                                     |
+	| LCHIJA | yungslaw            | 1.12.2                   | YungsLaw-1.12.2-1.0.4.jar                     | None                                     |
+	| LCHIJA | phosphor-lighting   | 1.12.2-0.2.6             | phosphor-1.12.2-0.2.6+build50-universal.jar   | f0387d288626cc2d937daa504e74af570c52a2f1 |
+	| UD     | mobends_wings       | 1.0.0                    | wings-1.1.6-1.12.2.jar                        | None                                     |
+
+	Loaded coremods (and transformers): 
+llibrary (llibrary-core-1.0.11-1.12.2.jar)
+  net.ilexiconn.llibrary.server.core.plugin.LLibraryTransformer
+  net.ilexiconn.llibrary.server.core.patcher.LLibraryRuntimePatcher
+wings (wings-1.1.6-1.12.2.jar)
+  me.paulf.wings.server.asm.WingsRuntimePatcher
+  me.paulf.wings.server.asm.mobends.WingsMoBendsRuntimePatcher
+TransformLoader (DynamicSurroundings-1.12.2-3.6.1.0.jar)
+  
+SSLoadingPlugin (SereneSeasons-1.12.2-1.2.18-universal.jar)
+  sereneseasons.asm.transformer.EntityRendererTransformer
+  sereneseasons.asm.transformer.WorldTransformer
+PhosphorFMLLoadingPlugin (phosphor-1.12.2-0.2.6+build50-universal.jar)
+  
+BackpackBaublesLoadingPlugin (BackpackBaubles-core.jar)
+  dev.sapphic.backpackbaubles.asm.ClassTransformer
+HCASM (HammerLib-1.12.2-2.0.6.28.jar)
+  com.zeitheron.hammercore.asm.HammerCoreTransformer
+Quark Plugin (Quark-r1.6-179.jar)
+  vazkii.quark.base.asm.ClassTransformer
+LoadingPlugin (HardcoreDarkness-MC1.12.2-2.0.jar)
+  lumien.hardcoredarkness.asm.ClassTransformer
+iceandfire (iceandfire-1.9.1-1.12.2.jar)
+  com.github.alexthe666.iceandfire.patcher.IceAndFireRuntimePatcher
+CTMCorePlugin (CTM-MC1.12.2-1.0.2.31.jar)
+  team.chisel.ctm.client.asm.CTMTransformer
+LoadingPlugin (Bloodmoon-MC1.12.2-1.5.3.jar)
+  lumien.bloodmoon.asm.ClassTransformer
+	GL info: ' Vendor: 'Intel' Version: '4.5.0 - Build 25.20.100.6373' Renderer: 'Intel(R) HD Graphics 630'
+	Pulsar/tconstruct loaded Pulses: 
+		- TinkerCommons (Enabled/Forced)
+		- TinkerWorld (Enabled/Not Forced)
+		- TinkerTools (Enabled/Not Forced)
+		- TinkerHarvestTools (Enabled/Forced)
+		- TinkerMeleeWeapons (Enabled/Forced)
+		- TinkerRangedWeapons (Enabled/Forced)
+		- TinkerModifiers (Enabled/Forced)
+		- TinkerSmeltery (Enabled/Not Forced)
+		- TinkerGadgets (Enabled/Not Forced)
+		- TinkerOredict (Enabled/Forced)
+		- TinkerIntegration (Enabled/Forced)
+		- TinkerFluids (Enabled/Forced)
+		- TinkerMaterials (Enabled/Forced)
+		- TinkerModelRegister (Enabled/Forced)
+		- quarkIntegration (Enabled/Not Forced)
+
+	HammerCore Debug Information: 
+		Dependent Mods: None.
+
+	Patchouli open book context: n/a
+	Launched Version: forge-14.23.5.2855
+	LWJGL: 2.9.4
+	OpenGL: Intel(R) HD Graphics 630 GL version 4.5.0 - Build 25.20.100.6373, Intel
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: 
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	CPU: 8x Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz
