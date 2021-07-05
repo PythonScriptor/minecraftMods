@@ -1,0 +1,149 @@
+[12:26:12] [Client thread/INFO] [JMLogger] JourneyMap log initialized.
+[12:26:12] [Client thread/INFO] [JourneymapClient] initialize ENTER
+[12:26:12] [Client thread/WARN] [PropertiesBase] core (Initialized) Bad configField entry during updateFrom(): optionsManagerViewed=null
+[12:26:12] [Client thread/WARN] [PropertiesBase] core (Initialized) Bad configField entry during updateFrom(): splashViewed=null
+[12:26:13] [Client thread/INFO] [?] Version: JourneyMap 1.12.2-5.7.1, built with Forge 14.23.5.2768
+Forge: 14.23.5.2854
+Environment: os.name, os.arch, java.version, user.country, user.language=null, game language=en_us, locale=en_us
+Features: 
+	RadarPlayers : singleplayer = true , multiplayer = true
+	RadarAnimals : singleplayer = true , multiplayer = true
+	RadarMobs : singleplayer = true , multiplayer = true
+	RadarVillagers : singleplayer = true , multiplayer = true
+	MapTopo : singleplayer = true , multiplayer = true
+	MapSurface : singleplayer = true , multiplayer = true
+	MapCaves : singleplayer = true , multiplayer = true
+MiniMapProperties{state=Valid, file=journeymap.minimap.config, configVersion=5.7.1, zoomLevel=0, showPlayers=true, frameAlpha=100, compassFontScale=1, terrainAlpha=100, showEntityNames=true, enabled=true, showPlayerHeading=true, showVillagers=true, info2Label=Game Time, sizePercent=30, showDayNight=true, info3Label=Location, showMobs=true, showPets=true, preferredMapType=day, showCompass=true, mobDisplay=Small Dots, showReticle=true, orientation=North, systemTimeRealFormat=HH:mm:ss, shape=Circle, showSelf=true, info4Label=Biome, locationFormat=xzyv, playerDisplay=Small Dots, showGrid=true, reticleOrientation=Compass, gameTimeRealFormat=HH:mm:ss, showWaypoints=true, showCaves=true, showAnimals=true, showMobHeading=true, showWaypointLabels=true, locationFormatVerbose=true, position=Top Right, info1Label=Blank, fontScale=1}
+MiniMapProperties{state=Valid, file=journeymap.minimap2.config, configVersion=5.7.1, zoomLevel=0, showPlayers=true, frameAlpha=100, compassFontScale=1, terrainAlpha=100, showEntityNames=true, enabled=true, showPlayerHeading=true, showVillagers=true, info2Label=Game Time, sizePercent=30, showDayNight=true, info3Label=Location, showMobs=true, showPets=true, preferredMapType=day, showCompass=true, mobDisplay=Small Dots, showReticle=true, orientation=North, systemTimeRealFormat=HH:mm:ss, shape=Rectangle, showSelf=true, info4Label=Biome, locationFormat=xzyv, playerDisplay=Small Dots, showGrid=true, reticleOrientation=Compass, gameTimeRealFormat=HH:mm:ss, showWaypoints=true, showCaves=true, showAnimals=true, showMobHeading=true, showWaypointLabels=true, locationFormatVerbose=true, position=Top Right, info1Label=Blank, fontScale=1}
+FullMapProperties{state=Valid, file=journeymap.fullmap.config, configVersion=5.7.1, mobDisplay=Small Dots, zoomLevel=0, showPlayers=true, showSelf=true, locationFormat=xzyv, playerDisplay=Small Dots, showGrid=true, showEntityNames=true, showPlayerHeading=true, showVillagers=true, showWaypoints=true, showCaves=true, showAnimals=true, showMobHeading=true, showKeys=true, showWaypointLabels=true, locationFormatVerbose=true, showMobs=true, showPets=true, fontScale=1, preferredMapType=day}
+WaypointProperties{state=Valid, file=journeymap.waypoint.config, configVersion=5.7.1, autoRemoveDeathpointDistance=2, createDeathpoints=true, showName=true, dateFormat=MM-dd-yyyy, autoRemoveDeathpoints=false, maxDistance=0, autoHideLabel=true, teleportCommand=/tp {name} {x} {y} {z}, showStaticBeam=true, minDistance=4, timeFormat=HH:mm:ss, boldLabel=false, textureSmall=true, showDeathpointlabel=true, showDistance=true, showRotatingBeam=true, fontScale=2, showTexture=true, managerEnabled=true, beaconEnabled=true}
+WebMapProperties{state=Valid, file=journeymap.webmap.config, configVersion=5.7.1, zoomLevel=0, showWaypoints=true, showCaves=true, showSelf=true, port=8080, showGrid=true, showEntityNames=true, enabled=false, preferredMapType=day}
+CoreProperties{state=Valid, file=journeymap.core.config, configVersion=5.7.1, verboseColorPalette=false, maxPlayersData=32, mapSurfaceAboveCaves=true, optionsManagerViewed=null, announceMod=true, colorPassive=#bbbbbb, renderOverlayEventTypeName=ALL, mapBlendWater=false, renderDistanceSurfaceMax=7, radarVerticalDistance=16, mapBlendGrass=true, recordCacheStats=false, hideSneakingEntities=true, revealShape=Circle, alwaysMapSurface=false, colorVillager=#88e188, mapPlants=false, colorPet=#0077ff, radarLateralDistance=64, mapBathymetry=false, mapCrops=true, maxMobsData=32, mapPlantShadows=false, alwaysMapCaves=false, checkUpdates=true, browserPoll=2000, mapBlendFoliage=true, mappingEnabled=true, colorPlayer=#ffffff, tileHighDisplayQuality=true, cacheVillagersData=2200, logLevel=INFO, maxVillagersData=32, maxAnimalsData=32, mapTransparency=true, tileRenderType=1, caveIgnoreGlass=true, mapTopography=true, renderDistanceCaveMax=3, mapAntialiasing=true, colorSelf=#0000ff, cachePlayersData=2000, cacheMobsData=3000, cachePlayerData=1000, splashViewed=null, colorHostile=#ff0000, cacheAnimalsData=3100, themeName=OceanMonument, mapCaveLighting=true, renderDelay=2, renderOverlayPreEvent=true, autoMapPoll=2000}
+[12:26:13] [Client thread/INFO] [ClientAPI] [ClientAPI] built with JourneyMap API 1.4
+[12:26:13] [Client thread/INFO] [PluginHelper] Initializing plugins with Client API: journeymap.client.api.impl.ClientAPI
+[12:26:13] [Client thread/INFO] [JourneymapClient] initialize EXIT, elapsed count 0 avg ?ms
+[12:26:16] [Client thread/DEBUG] [JourneymapClient] postInitialize ENTER
+[12:26:16] [Client thread/DEBUG] [EventHandlerManager] Handler registered: journeymap.client.forge.event.KeyEventHandler
+[12:26:16] [Client thread/DEBUG] [EventHandlerManager] Handler registered: journeymap.client.forge.event.ChatEventHandler
+[12:26:16] [Client thread/DEBUG] [EventHandlerManager] Handler registered: journeymap.client.forge.event.StateTickHandler
+[12:26:16] [Client thread/DEBUG] [EventHandlerManager] Handler registered: journeymap.client.forge.event.WorldEventHandler
+[12:26:16] [Client thread/DEBUG] [EventHandlerManager] Handler registered: journeymap.client.forge.event.WaypointBeaconHandler
+[12:26:16] [Client thread/DEBUG] [EventHandlerManager] Handler registered: journeymap.client.forge.event.TextureAtlasHandler
+[12:26:16] [Client thread/DEBUG] [EventHandlerManager] Handler registered: journeymap.client.forge.event.MiniMapOverlayHandler
+[12:26:16] [Client thread/DEBUG] [EventHandlerManager] Handler registered: journeymap.client.forge.event.PlayerConnectHandler
+[12:26:16] [Client thread/DEBUG] [EventHandlerManager] Handler registered: journeymap.client.world.ChunkMonitor
+[12:26:16] [Client thread/INFO] [IconSetFileHandler] Added entity icons from journeymap:icon/entity. Success: false
+[12:26:16] [Client thread/TRACE] [ThemeLoader] Initializing themes ...
+[12:26:17] [Client thread/INFO] [ThemeLoader] Preloaded theme textures: 73
+[12:26:17] [Client thread/DEBUG] [StatTimer] elapsed was slow: 1129.6896
+[12:26:17] [Client thread/DEBUG] [JourneymapClient] postInitialize EXIT, elapsed§8 count §r1§8 avg §r§r1129.69§8ms§r
+[12:27:23] [Client thread/WARN] [PropertiesBase] core (Initialized) Bad configField entry during updateFrom(): optionsManagerViewed=null
+[12:27:23] [Client thread/WARN] [PropertiesBase] core (Initialized) Bad configField entry during updateFrom(): splashViewed=null
+[12:27:23] [Client thread/INFO] [ModBlockDelegate] Custom modded block handling enabled for streams
+[12:27:24] [Client thread/INFO] [WaypointStore] Loaded 0 waypoints from C:\Users\Lore\AppData\Roaming\.minecraft\minecraftMods\journeymap\data\mp\Survive~Or~Die\waypoints
+[12:27:24] [Client thread/INFO] [JourneymapClient] Mapping started in C:\Users\Lore\AppData\Roaming\.minecraft\minecraftMods\journeymap\data\mp\Survive~Or~Die\DIM0. Memory: 2048MB total, 567MB free 
+[12:27:24] [Client thread/INFO] [ChatLog] JourneyMap: Press [J]
+[13:18:23] [Client thread/INFO] [StateTickHandler] Froaggu died at BlockPos{x=-216, y=69, z=319}. Deathpoints enabled: true. Deathpoint created: true
+[13:19:40] [Client thread/INFO] [StateTickHandler] Froaggu died at BlockPos{x=-171, y=35, z=258}. Deathpoints enabled: true. Deathpoint created: true
+[13:21:13] [Client thread/INFO] [StatTimer] TileDrawStep.updateRegionTexture hit max count, 1000000
+[13:21:14] [Client thread/INFO] [StatTimer] TileDrawStep.draw(low) hit max count, 1000000
+[14:35:10] [Client thread/INFO] [StateTickHandler] Froaggu died at BlockPos{x=-171, y=12, z=342}. Deathpoints enabled: true. Deathpoint created: true
+[14:40:07] [Client thread/INFO] [JourneymapClient] Mapping halted in C:\Users\Lore\AppData\Roaming\.minecraft\minecraftMods\journeymap\data\mp\Survive~Or~Die\DIM0
+[15:02:30] [Client thread/WARN] [PropertiesBase] core (Initialized) Bad configField entry during updateFrom(): optionsManagerViewed=null
+[15:02:30] [Client thread/WARN] [PropertiesBase] core (Initialized) Bad configField entry during updateFrom(): splashViewed=null
+[15:02:30] [Client thread/INFO] [WaypointStore] Loaded 2 waypoints from C:\Users\Lore\AppData\Roaming\.minecraft\minecraftMods\journeymap\data\mp\Survive~Or~Die\waypoints
+[15:02:30] [Client thread/INFO] [JourneymapClient] Mapping started in C:\Users\Lore\AppData\Roaming\.minecraft\minecraftMods\journeymap\data\mp\Survive~Or~Die\DIM0. Memory: 2048MB total, 383MB free 
+[15:18:12] [Client thread/INFO] [StateTickHandler] Froaggu died at BlockPos{x=-173, y=38, z=257}. Deathpoints enabled: true. Deathpoint created: true
+[15:18:29] [Client thread/INFO] [StateTickHandler] Froaggu died at BlockPos{x=-170, y=35, z=258}. Deathpoints enabled: true. Deathpoint created: true
+[15:42:40] [Client thread/INFO] [StateTickHandler] Froaggu died at BlockPos{x=-200, y=64, z=332}. Deathpoints enabled: true. Deathpoint created: true
+[15:44:31] [Client thread/INFO] [StateTickHandler] Froaggu died at BlockPos{x=-182, y=38, z=260}. Deathpoints enabled: true. Deathpoint created: true
+[15:44:56] [Client thread/INFO] [StateTickHandler] Froaggu died at BlockPos{x=-154, y=38, z=277}. Deathpoints enabled: true. Deathpoint created: true
+[15:45:17] [Client thread/INFO] [StateTickHandler] Froaggu died at BlockPos{x=-151, y=40, z=277}. Deathpoints enabled: true. Deathpoint created: true
+[15:45:55] [Client thread/INFO] [StateTickHandler] Froaggu died at BlockPos{x=-175, y=36, z=260}. Deathpoints enabled: true. Deathpoint created: true
+[15:46:07] [Client thread/INFO] [StateTickHandler] Froaggu died at BlockPos{x=-177, y=36, z=261}. Deathpoints enabled: true. Deathpoint created: true
+[15:46:21] [Client thread/INFO] [StateTickHandler] Froaggu died at BlockPos{x=-174, y=36, z=262}. Deathpoints enabled: true. Deathpoint created: true
+[15:46:37] [Client thread/INFO] [StateTickHandler] Froaggu died at BlockPos{x=-178, y=36, z=258}. Deathpoints enabled: true. Deathpoint created: true
+[15:48:39] [Client thread/INFO] [StateTickHandler] Froaggu died at BlockPos{x=-176, y=36, z=262}. Deathpoints enabled: true. Deathpoint created: true
+[16:00:21] [Client thread/INFO] [StatTimer] TileDrawStep.updateRegionTexture hit max count, 1000000
+[16:00:22] [Client thread/INFO] [StatTimer] TileDrawStep.draw(low) hit max count, 1000000
+[16:31:25] [Client thread/INFO] [StateTickHandler] Froaggu died at BlockPos{x=-168, y=59, z=215}. Deathpoints enabled: true. Deathpoint created: true
+[16:43:51] [Client thread/INFO] [JourneymapClient] Mapping halted in C:\Users\Lore\AppData\Roaming\.minecraft\minecraftMods\journeymap\data\mp\Survive~Or~Die\DIM0
+[16:43:52] [Client thread/WARN] [PropertiesBase] core (Initialized) Bad configField entry during updateFrom(): optionsManagerViewed=null
+[16:43:52] [Client thread/WARN] [PropertiesBase] core (Initialized) Bad configField entry during updateFrom(): splashViewed=null
+[16:43:52] [Client thread/INFO] [WaypointStore] Loaded 14 waypoints from C:\Users\Lore\AppData\Roaming\.minecraft\minecraftMods\journeymap\data\mp\Survive~Or~Die\waypoints
+[16:43:52] [Client thread/INFO] [JourneymapClient] Mapping started in C:\Users\Lore\AppData\Roaming\.minecraft\minecraftMods\journeymap\data\mp\Survive~Or~Die\DIM-1. Memory: 2048MB total, 334MB free 
+[16:56:40] [Client thread/INFO] [StateTickHandler] Froaggu died at BlockPos{x=19, y=56, z=29}. Deathpoints enabled: true. Deathpoint created: true
+[16:56:41] [Client thread/INFO] [JourneymapClient] Mapping halted in C:\Users\Lore\AppData\Roaming\.minecraft\minecraftMods\journeymap\data\mp\Survive~Or~Die\DIM-1
+[16:56:45] [Client thread/WARN] [PropertiesBase] core (Initialized) Bad configField entry during updateFrom(): optionsManagerViewed=null
+[16:56:45] [Client thread/INFO] [WaypointStore] Loaded 17 waypoints from C:\Users\Lore\AppData\Roaming\.minecraft\minecraftMods\journeymap\data\mp\Survive~Or~Die\waypoints
+[16:56:45] [Client thread/INFO] [JourneymapClient] Mapping started in C:\Users\Lore\AppData\Roaming\.minecraft\minecraftMods\journeymap\data\mp\Survive~Or~Die\DIM0. Memory: 2048MB total, 557MB free 
+[16:56:52] [JM-task-7/WARN] [SurfaceRenderer] java.lang.NullPointerException
+	at journeymap.client.cartography.render.SurfaceRenderer.paintStrata(SurfaceRenderer.java:368)
+	at journeymap.client.cartography.render.SurfaceRenderer.renderSurface(SurfaceRenderer.java:190)
+	at journeymap.client.cartography.render.SurfaceRenderer.render(SurfaceRenderer.java:113)
+	at journeymap.client.cartography.render.SurfaceRenderer.render(SurfaceRenderer.java:86)
+	at journeymap.client.cartography.ChunkRenderController.renderChunk(ChunkRenderController.java:140)
+	at journeymap.client.task.multi.BaseMapTask.performTask(BaseMapTask.java:122)
+	at journeymap.client.task.multi.TaskBatch.performTask(TaskBatch.java:72)
+	at journeymap.client.task.multi.MapPlayerTask$MapPlayerTaskBatch.performTask(MapPlayerTask.java:416)
+	at journeymap.client.thread.RunnableTask$Inner.run(RunnableTask.java:78)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+[16:57:14] [Client thread/INFO] [JourneymapClient] Mapping halted in C:\Users\Lore\AppData\Roaming\.minecraft\minecraftMods\journeymap\data\mp\Survive~Or~Die\DIM0
+[16:57:16] [Client thread/WARN] [PropertiesBase] core (Initialized) Bad configField entry during updateFrom(): optionsManagerViewed=null
+[16:57:16] [Client thread/INFO] [WaypointStore] Loaded 17 waypoints from C:\Users\Lore\AppData\Roaming\.minecraft\minecraftMods\journeymap\data\mp\Survive~Or~Die\waypoints
+[16:57:16] [Client thread/INFO] [JourneymapClient] Mapping started in C:\Users\Lore\AppData\Roaming\.minecraft\minecraftMods\journeymap\data\mp\Survive~Or~Die\DIM-1. Memory: 2048MB total, 409MB free 
+[17:04:09] [Client thread/INFO] [StateTickHandler] Froaggu died at BlockPos{x=157, y=57, z=97}. Deathpoints enabled: true. Deathpoint created: true
+[17:12:16] [Client thread/INFO] [StateTickHandler] Froaggu died at BlockPos{x=156, y=60, z=91}. Deathpoints enabled: true. Deathpoint created: true
+[17:12:17] [Client thread/INFO] [JourneymapClient] Mapping halted in C:\Users\Lore\AppData\Roaming\.minecraft\minecraftMods\journeymap\data\mp\Survive~Or~Die\DIM-1
+[17:12:20] [Client thread/WARN] [PropertiesBase] core (Initialized) Bad configField entry during updateFrom(): optionsManagerViewed=null
+[17:12:20] [Client thread/INFO] [WaypointStore] Loaded 19 waypoints from C:\Users\Lore\AppData\Roaming\.minecraft\minecraftMods\journeymap\data\mp\Survive~Or~Die\waypoints
+[17:12:20] [Client thread/INFO] [JourneymapClient] Mapping started in C:\Users\Lore\AppData\Roaming\.minecraft\minecraftMods\journeymap\data\mp\Survive~Or~Die\DIM0. Memory: 2048MB total, 279MB free 
+[17:12:33] [Client thread/INFO] [JourneymapClient] Mapping halted in C:\Users\Lore\AppData\Roaming\.minecraft\minecraftMods\journeymap\data\mp\Survive~Or~Die\DIM0
+[17:12:34] [Client thread/WARN] [PropertiesBase] core (Initialized) Bad configField entry during updateFrom(): optionsManagerViewed=null
+[17:12:34] [Client thread/INFO] [WaypointStore] Loaded 19 waypoints from C:\Users\Lore\AppData\Roaming\.minecraft\minecraftMods\journeymap\data\mp\Survive~Or~Die\waypoints
+[17:12:34] [Client thread/INFO] [JourneymapClient] Mapping started in C:\Users\Lore\AppData\Roaming\.minecraft\minecraftMods\journeymap\data\mp\Survive~Or~Die\DIM-1. Memory: 2048MB total, 329MB free 
+[17:16:15] [Client thread/INFO] [JourneymapClient] Mapping halted in C:\Users\Lore\AppData\Roaming\.minecraft\minecraftMods\journeymap\data\mp\Survive~Or~Die\DIM-1
+[17:16:17] [Client thread/WARN] [PropertiesBase] core (Initialized) Bad configField entry during updateFrom(): optionsManagerViewed=null
+[17:16:17] [Client thread/INFO] [WaypointStore] Loaded 19 waypoints from C:\Users\Lore\AppData\Roaming\.minecraft\minecraftMods\journeymap\data\mp\Survive~Or~Die\waypoints
+[17:16:17] [Client thread/INFO] [JourneymapClient] Mapping started in C:\Users\Lore\AppData\Roaming\.minecraft\minecraftMods\journeymap\data\mp\Survive~Or~Die\DIM0. Memory: 2048MB total, 456MB free 
+[18:13:39] [Client thread/WARN] [StatTimer] TileDrawStep.updateRegionTexture was slow: 65.1997 (Warning limit reached)
+[18:13:39] [Client thread/WARN] [StatTimer] TileDrawStep.updateRegionTexture: Avg:     0.01ms, Min:        0ms, Max:      123.6ms, Total:          7 sec, Count:   611332, Canceled:        0, Slow:       10
+[18:20:36] [Client thread/INFO] [StateTickHandler] Froaggu died at BlockPos{x=-156, y=38, z=271}. Deathpoints enabled: true. Deathpoint created: true
+[18:20:53] [Client thread/INFO] [StateTickHandler] Froaggu died at BlockPos{x=-180, y=36, z=259}. Deathpoints enabled: true. Deathpoint created: true
+[18:21:09] [Client thread/INFO] [StateTickHandler] Froaggu died at BlockPos{x=-168, y=36, z=261}. Deathpoints enabled: true. Deathpoint created: true
+[18:21:25] [Client thread/INFO] [StateTickHandler] Froaggu died at BlockPos{x=-183, y=37, z=257}. Deathpoints enabled: true. Deathpoint created: true
+[18:21:51] [JM-task-11/WARN] [SurfaceRenderer] java.lang.NullPointerException
+	at journeymap.client.cartography.render.SurfaceRenderer.paintStrata(SurfaceRenderer.java:368)
+	at journeymap.client.cartography.render.SurfaceRenderer.renderSurface(SurfaceRenderer.java:190)
+	at journeymap.client.cartography.render.SurfaceRenderer.render(SurfaceRenderer.java:113)
+	at journeymap.client.cartography.render.SurfaceRenderer.render(SurfaceRenderer.java:86)
+	at journeymap.client.cartography.ChunkRenderController.renderChunk(ChunkRenderController.java:140)
+	at journeymap.client.task.multi.BaseMapTask.performTask(BaseMapTask.java:122)
+	at journeymap.client.task.multi.TaskBatch.performTask(TaskBatch.java:72)
+	at journeymap.client.task.multi.MapPlayerTask$MapPlayerTaskBatch.performTask(MapPlayerTask.java:416)
+	at journeymap.client.thread.RunnableTask$Inner.run(RunnableTask.java:78)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+[18:23:10] [Client thread/INFO] [JourneymapClient] Mapping halted in C:\Users\Lore\AppData\Roaming\.minecraft\minecraftMods\journeymap\data\mp\Survive~Or~Die\DIM0
+[18:24:06] [Client thread/WARN] [PropertiesBase] core (Initialized) Bad configField entry during updateFrom(): optionsManagerViewed=null
+[18:24:09] [Client thread/INFO] [WaypointStore] Loaded 24 waypoints from C:\Users\Lore\AppData\Roaming\.minecraft\minecraftMods\journeymap\data\mp\Survive~Or~Die\waypoints
+[18:24:09] [Client thread/INFO] [JourneymapClient] Mapping started in C:\Users\Lore\AppData\Roaming\.minecraft\minecraftMods\journeymap\data\mp\Survive~Or~Die\DIM0. Memory: 2048MB total, 445MB free 
+[18:25:17] [Client thread/INFO] [StateTickHandler] Froaggu died at BlockPos{x=-168, y=77, z=265}. Deathpoints enabled: true. Deathpoint created: true
+[18:26:25] [Client thread/INFO] [JourneymapClient] Mapping halted in C:\Users\Lore\AppData\Roaming\.minecraft\minecraftMods\journeymap\data\mp\Survive~Or~Die\DIM0
+[18:51:15] [Client thread/WARN] [PropertiesBase] core (Initialized) Bad configField entry during updateFrom(): optionsManagerViewed=null
+[18:51:18] [Client thread/INFO] [WaypointStore] Loaded 25 waypoints from C:\Users\Lore\AppData\Roaming\.minecraft\minecraftMods\journeymap\data\mp\Survive~Or~Die\waypoints
+[18:51:18] [Client thread/INFO] [JourneymapClient] Mapping started in C:\Users\Lore\AppData\Roaming\.minecraft\minecraftMods\journeymap\data\mp\Survive~Or~Die\DIM0. Memory: 2048MB total, 370MB free 
+[18:51:34] [Client thread/INFO] [JourneymapClient] Mapping halted in C:\Users\Lore\AppData\Roaming\.minecraft\minecraftMods\journeymap\data\mp\Survive~Or~Die\DIM0

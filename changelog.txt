@@ -1,6 +1,0 @@
-Added 2 mods for QOL additions:
-Callable Horses
-Wolf Armor
-
-Added 1 mod for swords and weapons:
-Useless Swords
